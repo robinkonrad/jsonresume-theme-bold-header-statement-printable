@@ -116,7 +116,7 @@ const HeaderSection = styled.header`
 `;
 
 const Name = styled.h1`
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 900;
   color: white;
   margin: 0 0 8px 0;
@@ -127,12 +127,12 @@ const Name = styled.h1`
   z-index: 1;
 
   @media print {
-    font-size: 1.75rem;
+    font-size: 2.1875rem;
   }
 `;
 
 const Label = styled.div`
-  font-size: 0.75rem;
+  font-size: 0.9375rem;
   color: rgba(255, 255, 255, 0.95);
   margin-bottom: 16px;
   font-weight: 300;
@@ -142,7 +142,7 @@ const Label = styled.div`
 `;
 
 const StyledContactInfo = styled(ContactInfo)`
-  font-size: 8px;
+  font-size: 10px;
   position: relative;
   z-index: 1;
 
@@ -157,7 +157,7 @@ const StyledContactInfo = styled(ContactInfo)`
 `;
 
 const Summary = styled.p`
-  font-size: 9px;
+  font-size: 11.25px;
   line-height: 1.8;
   color: #374151;
   margin: 0 0 30px 0;
@@ -167,7 +167,7 @@ const Summary = styled.p`
 
 // Section styles
 const StyledSectionTitle = styled(SectionTitle)`
-  font-size: 7px;
+  font-size: 8.75px;
   font-weight: 700;
   color: #0f766e;
   text-transform: uppercase;
@@ -178,9 +178,9 @@ const StyledSectionTitle = styled(SectionTitle)`
 `;
 
 const ContentBlock = styled.div`
-  margin-bottom: 25px;
+  margin-bottom: 14px;
   background: #fafafa;
-  padding: 16px;
+  padding: 8px 16px;
   border-radius: 4px;
   border-left: 2.5px solid #0f766e;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
@@ -192,17 +192,17 @@ const ContentBlock = styled.div`
   @media print {
     background: white;
     border: 1px solid #e5e7eb;
-    padding: 12px;
+    padding: 6px 12px;
   }
 `;
 
 // Work section
 const WorkHeader = styled.div`
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 `;
 
 const Position = styled.h3`
-  font-size: 11px;
+  font-size: 13.75px;
   font-weight: 700;
   color: #111827;
   margin: 0 0 4px 0;
@@ -210,14 +210,14 @@ const Position = styled.h3`
 `;
 
 const Company = styled.div`
-  font-size: 9px;
+  font-size: 11.25px;
   color: #0f766e;
   font-weight: 500;
   margin-bottom: 4px;
 `;
 
 const DateText = styled.div`
-  font-size: 7px;
+  font-size: 8.75px;
   color: #6b7280;
   font-weight: 400;
   text-transform: uppercase;
@@ -225,26 +225,26 @@ const DateText = styled.div`
 `;
 
 const WorkSummary = styled.p`
-  margin: 8px 0;
+  margin: 4px 0;
   color: #4b5563;
   line-height: 1.7;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 300;
 `;
 
 const Highlights = styled.ul`
-  margin: 8px 0 0 0;
+  margin: 4px 0 0 0;
   padding-left: 12px;
   list-style-type: none;
 
   li {
-    margin: 5px 0;
+    margin: 2px 0;
     color: #374151;
     line-height: 1.7;
     font-weight: 300;
     position: relative;
     padding-left: 4px;
-    font-size: 8px;
+    font-size: 10px;
 
     &::before {
       content: '▸';
@@ -273,7 +273,7 @@ const SkillCategory = styled.div`
 `;
 
 const SkillName = styled.h4`
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 700;
   color: #0f766e;
   margin: 0 0 6px 0;
@@ -282,7 +282,7 @@ const SkillName = styled.h4`
 `;
 
 const SkillTags = styled.div`
-  font-size: 7px;
+  font-size: 8.75px;
   color: #6b7280;
   line-height: 1.6;
   font-weight: 300;
@@ -290,21 +290,21 @@ const SkillTags = styled.div`
 
 // Education section
 const Institution = styled.h3`
-  font-size: 10px;
+  font-size: 12.5px;
   font-weight: 700;
   color: #111827;
   margin: 0 0 4px 0;
 `;
 
 const Degree = styled.div`
-  font-size: 8px;
+  font-size: 10px;
   color: #4b5563;
   margin-bottom: 4px;
   font-weight: 400;
 `;
 
 const EducationDate = styled.div`
-  font-size: 7px;
+  font-size: 8.75px;
   color: #6b7280;
   text-transform: uppercase;
   letter-spacing: 0.5px;

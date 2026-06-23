@@ -1418,7 +1418,7 @@ const HeaderSection = Tt.header`
   }
 `;
 const Name = Tt.h1`
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 900;
   color: white;
   margin: 0 0 8px 0;
@@ -1429,11 +1429,11 @@ const Name = Tt.h1`
   z-index: 1;
 
   @media print {
-    font-size: 1.75rem;
+    font-size: 2.1875rem;
   }
 `;
 const Label = Tt.div`
-  font-size: 0.75rem;
+  font-size: 0.9375rem;
   color: rgba(255, 255, 255, 0.95);
   margin-bottom: 16px;
   font-weight: 300;
@@ -1442,7 +1442,7 @@ const Label = Tt.div`
   z-index: 1;
 `;
 const StyledContactInfo = Tt(ContactInfo)`
-  font-size: 8px;
+  font-size: 10px;
   position: relative;
   z-index: 1;
 
@@ -1456,7 +1456,7 @@ const StyledContactInfo = Tt(ContactInfo)`
   }
 `;
 const Summary = Tt.p`
-  font-size: 9px;
+  font-size: 11.25px;
   line-height: 1.8;
   color: #374151;
   margin: 0 0 30px 0;
@@ -1464,7 +1464,7 @@ const Summary = Tt.p`
   max-width: 800px;
 `;
 const StyledSectionTitle = Tt(SectionTitle)`
-  font-size: 7px;
+  font-size: 8.75px;
   font-weight: 700;
   color: #0f766e;
   text-transform: uppercase;
@@ -1474,9 +1474,9 @@ const StyledSectionTitle = Tt(SectionTitle)`
   border-bottom: 1.5px solid #0f766e;
 `;
 const ContentBlock = Tt.div`
-  margin-bottom: 25px;
+  margin-bottom: 14px;
   background: #fafafa;
-  padding: 16px;
+  padding: 8px 16px;
   border-radius: 4px;
   border-left: 2.5px solid #0f766e;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
@@ -1488,52 +1488,52 @@ const ContentBlock = Tt.div`
   @media print {
     background: white;
     border: 1px solid #e5e7eb;
-    padding: 12px;
+    padding: 6px 12px;
   }
 `;
 const WorkHeader = Tt.div`
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 `;
 const Position = Tt.h3`
-  font-size: 11px;
+  font-size: 13.75px;
   font-weight: 700;
   color: #111827;
   margin: 0 0 4px 0;
   letter-spacing: -0.25px;
 `;
 const Company = Tt.div`
-  font-size: 9px;
+  font-size: 11.25px;
   color: #0f766e;
   font-weight: 500;
   margin-bottom: 4px;
 `;
 const DateText = Tt.div`
-  font-size: 7px;
+  font-size: 8.75px;
   color: #6b7280;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 `;
 const WorkSummary = Tt.p`
-  margin: 8px 0;
+  margin: 4px 0;
   color: #4b5563;
   line-height: 1.7;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 300;
 `;
 const Highlights = Tt.ul`
-  margin: 8px 0 0 0;
+  margin: 4px 0 0 0;
   padding-left: 12px;
   list-style-type: none;
 
   li {
-    margin: 5px 0;
+    margin: 2px 0;
     color: #374151;
     line-height: 1.7;
     font-weight: 300;
     position: relative;
     padding-left: 4px;
-    font-size: 8px;
+    font-size: 10px;
 
     &::before {
       content: '▸';
@@ -1558,7 +1558,7 @@ const SkillCategory = Tt.div`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 `;
 const SkillName = Tt.h4`
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 700;
   color: #0f766e;
   margin: 0 0 6px 0;
@@ -1566,25 +1566,25 @@ const SkillName = Tt.h4`
   letter-spacing: 0.5px;
 `;
 const SkillTags = Tt.div`
-  font-size: 7px;
+  font-size: 8.75px;
   color: #6b7280;
   line-height: 1.6;
   font-weight: 300;
 `;
 const Institution = Tt.h3`
-  font-size: 10px;
+  font-size: 12.5px;
   font-weight: 700;
   color: #111827;
   margin: 0 0 4px 0;
 `;
 const Degree = Tt.div`
-  font-size: 8px;
+  font-size: 10px;
   color: #4b5563;
   margin-bottom: 4px;
   font-weight: 400;
 `;
 const EducationDate = Tt.div`
-  font-size: 7px;
+  font-size: 8.75px;
   color: #6b7280;
   text-transform: uppercase;
   letter-spacing: 0.5px;
