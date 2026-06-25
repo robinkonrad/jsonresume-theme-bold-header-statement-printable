@@ -1493,12 +1493,16 @@ const ContentBlock = Tt.div`
   }
 
   @media print {
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
     background: white;
     border: 1px solid #e5e7eb;
     padding: 6px 16px;
-    break-inside: avoid;
-    page-break-inside: avoid;
-    -webkit-column-break-inside: avoid;
+    break-inside: avoid-page !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    -webkit-column-break-inside: avoid !important;
   }
 `;
 const WorkHeader = Tt.div`
@@ -1570,9 +1574,13 @@ const SkillCategory = Tt.div`
   page-break-inside: avoid;
 
   @media print {
-    break-inside: avoid;
-    page-break-inside: avoid;
-    -webkit-column-break-inside: avoid;
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+    break-inside: avoid-page !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    -webkit-column-break-inside: avoid !important;
   }
 `;
 const SkillName = Tt.h4`
