@@ -175,6 +175,11 @@ const StyledSectionTitle = styled(SectionTitle)`
   margin: 30px 0 16px 0;
   padding-bottom: 6px;
   border-bottom: 1.5px solid #0f766e;
+
+  @media print {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
 `;
 
 const ContentBlock = styled.div`
@@ -184,6 +189,8 @@ const ContentBlock = styled.div`
   border-radius: 4px;
   border-left: 2.5px solid #0f766e;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  break-inside: avoid;
+  page-break-inside: avoid;
 
   &:last-child {
     margin-bottom: 0;
@@ -192,7 +199,10 @@ const ContentBlock = styled.div`
   @media print {
     background: white;
     border: 1px solid #e5e7eb;
-    padding: 6px 12px;
+    padding: 6px 16px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
   }
 `;
 
@@ -270,6 +280,14 @@ const SkillCategory = styled.div`
   border: 1px solid #0f766e;
   transition: transform 0.2s;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  break-inside: avoid;
+  page-break-inside: avoid;
+
+  @media print {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+  }
 `;
 
 const SkillName = styled.h4`
