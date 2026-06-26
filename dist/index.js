@@ -1474,8 +1474,9 @@ const StyledSectionTitle = Tt(SectionTitle)`
   border-bottom: 1.5px solid #0f766e;
 
   @media print {
-    break-after: avoid;
-    page-break-after: avoid;
+    break-after: avoid-page !important;
+    page-break-after: avoid !important;
+    -webkit-column-break-after: avoid !important;
   }
 `;
 const ContentBlock = Tt.div`
