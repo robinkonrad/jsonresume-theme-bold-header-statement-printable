@@ -1,50 +1,17 @@
-# jsonresume-theme-bold-header-statement
+# Changelog
 
-## 1.1.3
+All notable changes to this package are documented in this file.
 
-### Patch Changes
+## [1.0.4] - 2026-06-26
 
-- 2be531c: use @jsonresume/core/ssr renderResumeDocument
-- Updated dependencies [ff09f75]
-  - @jsonresume/core@0.3.1
+### Changed
 
-## 1.1.2
+- Reworked the theme as a standalone ESM renderer with a named `render` export.
+- Removed the workspace-only `@jsonresume/core` dependency and render the document locally with React and styled-components.
+- Reduced typography and vertical content spacing for more compact printed resumes while retaining the existing horizontal block padding.
+- Added print-specific page-break rules for content blocks, skill categories, and section headings.
+- Updated package documentation to describe the actual renderer API, supported sections, print behavior, and local build process.
 
-### Patch Changes
+### Packaging
 
-- Updated dependencies [ff0f85b]
-  - @jsonresume/core@0.3.0
-
-## 1.1.1
-
-### Patch Changes
-
-- Updated dependencies [36d1759]
-  - @jsonresume/core@0.2.0
-
-## 1.1.0
-
-### Minor Changes
-
-- 718690c: Add missing JSON Resume sections (certificates/volunteer/publications); visual and crash fixes.
-
-  Publishes the wave 5-7 theme improvements that currently exist only in git (refs #275). The
-  published npm versions are stale: most themes never rendered certificates/volunteer/publications,
-  and all carried the `@resume/core` import (renamed to `@jsonresume/core`) plus the Date-shadow
-  rendering crash.
-
-  Minor (gained rendered sections via the "render missing sections" batches #363-#366 and the
-  operations-precision a11y/markdown work): all themes listed above as `minor` now render the
-  previously-missing certificates/volunteer/publications (and related) sections.
-
-  Patch (no new sections; visual, crash and dependency-rename fixes only):
-
-  - consultant-polished: stop crash when certificates/publications present (#359).
-  - tokyo-modernist: exports/CI fixes; styled-components moved to dependencies.
-  - @jsonresume/theme-stackoverflow: consistent date formatting (#259) + a11y fixes (the
-    Yarn-Berry lockfile removal did not change source and does not drive this bump).
-  - community-garden, desert-modern, elegant-pink: `@resume/core` -> `@jsonresume/core` import
-    fix and visual polish; sections were already rendered.
-
-  Excludes `@jsonresume/jsonresume-theme-professional` (already current on npm) and the private
-  themes (claude, creative-confidence, flat, tailwind).
+- Limit published files to the compiled `dist` bundle and package documentation so repository metadata, including any future `.github` directory, is excluded from npm deliveries.

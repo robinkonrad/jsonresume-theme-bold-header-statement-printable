@@ -1493,9 +1493,6 @@ const ContentBlock = Tt.div`
   }
 
   @media print {
-    display: table;
-    width: 100%;
-    box-sizing: border-box;
     background: white;
     border: 1px solid #e5e7eb;
     padding: 6px 16px;
@@ -1574,9 +1571,6 @@ const SkillCategory = Tt.div`
   page-break-inside: avoid;
 
   @media print {
-    display: table;
-    width: 100%;
-    box-sizing: border-box;
     break-inside: avoid-page !important;
     break-inside: avoid !important;
     page-break-inside: avoid !important;
